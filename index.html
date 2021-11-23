@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            padding: 50px;
+            background-image: url(https://i.pinimg.com/originals/82/e1/38/82e1385c578fde369f0631d13aec06b5.jpg);
+             background-size: 600px;
+            
+
+        }
+
+        .box{
+            background-color: red;
+            width: 250px;
+            height: 200px;
+            position: relative;
+            display: inline-block;
+
+            animation-name: myframe;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: forwards;
+            animation-play-state: running;
+
+        }
+        .box1{
+            background-color: pink;
+            width: 550px;
+            height: 200px;
+            position: relative;
+            display: inline-block;
+
+            animation-name: myframe1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-play-state: running;
+
+        }
+        @keyframes myframe1 {
+            
+            from{
+                height: 0px;
+                
+            }
+            20%{
+                background-color: grey;
+                transform: rotate(360deg);
+                background-image: 
+            }
+            40%{
+                background-color: rgb(108, 49, 131);
+            }
+            to{
+                height: 0px;
+                background-color: rgb(90, 143, 29);
+                
+            }
+        }
+
+        @keyframes myframe {
+            
+            from{
+                height: 00px;
+                
+            }
+            20%{
+                background-color: brown;
+            }
+            40%{
+                background-color: chartreuse;
+                transform: rotate(360deg);
+                
+            }
+            to{
+                height: 00px;
+                background-color: green;
+                
+            }
+        }
+        img{
+            width: 250px;
+            height: 310px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box ">
+        <p style="font-size: 50px;"  ><img src="https://i.pinimg.com/originals/82/e1/38/82e1385c578fde369f0631d13aec06b5.jpg" alt="" ></p>
+        <audio autoplay>
+            <source src="The Score - Stronger.mp3"/>
+        </audio>
+    </div>
+    <div class="box1"> <p style="font-size: 50px;"  ><img src="https://i.pinimg.com/originals/82/e1/38/82e1385c578fde369f0631d13aec06b5.jpg" alt="" ></p></div>
+    <audio autoplay>
+        <source src="The Score - Stronger.mp3"/>
+    </audio>
+    
+</body>
+</html>
